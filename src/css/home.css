@@ -1,0 +1,198 @@
+#home-page {
+    max-width: 100vw;
+    padding: 18px 5%;
+    display: grid;
+    gap: 18px;
+    grid-template-columns: 2.5fr 1fr;
+}
+
+/* hr {
+    background-color: #DFDFDF;
+    border-color: #DFDFDF;
+} */
+
+.home-column {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.home-section > h3 {
+    font-size: 16px;
+}
+
+#home-article-section > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.home-article {
+    display: grid;
+    cursor: pointer;
+    transition-duration: 400ms;
+    max-width: 100%;
+}
+
+.home-article:hover {
+    opacity: 0.85;
+}
+
+.home-article-cover, .home-article-info {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.home-article-info {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255, 0.22), rgb(0, 0, 0, 0.26), rgb(0, 0, 0, 0.26), rgb(162, 162, 162, 0.26));
+}
+
+.home-article-genre {
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.home-article-title {
+    color: #FFFFFF;
+    font-size: 32px;
+    display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: left;
+}
+
+.home-article-byline {
+    color: #FFFFFF;
+}
+
+.home-article-cover {
+    aspect-ratio: 450 / 250;
+    object-fit: cover;
+    width: 100%;
+}
+
+#home-announcement-section > ul {
+    display: flex;
+    gap: 18px;
+}
+
+.home-announcement {
+    box-shadow: 0 4px 8.5px 2px rgb(0, 0, 0, 0.06);
+    padding: 12px;
+}
+
+.home-announcement-date {
+    color: #BFBFBF;
+}
+
+.home-announcement-author {
+    color: #E29213;
+}
+
+#home-sport-section > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.home-game {
+    box-shadow: 0 4px 8.5px 2px rgb(0, 0, 0, 0.06);
+    padding: 12px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.home-game-type {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.home-game-type > p {
+    color: #E29213;
+    font-size: 10px;
+    /* flex-shrink: 1;
+    flex-grow: 0; */
+}
+
+.home-game-type > div {
+    flex-shrink: 0;
+    flex-grow: 1;
+    background-color: #BFBFBF;
+    height: 1px;
+}
+
+.home-game-info {
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    align-items: center;
+}
+
+.home-game-right {
+    font-size: 13px;
+    text-align: right;
+}
+
+#home-event-section > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.home-event {
+    box-shadow: 0 4px 8.5px 2px rgb(0, 0, 0, 0.06);
+    padding: 12px;
+}
+
+.home-event-title {
+    font-size: 16px;
+}
+
+.home-event-date {
+    color: #E29213;
+    font-size: 12px;
+}
+
+.home-event-location {
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 900px) {
+    #home-page {
+        grid-template-columns: 1fr;
+    }
+
+    #home-column-two {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #home-page {
+        grid-template-columns: 1fr;
+    }
+
+    #home-article-section > ul {
+        grid-template-columns: 1fr;
+    }  
+
+    #home-announcement-section > ul {
+        flex-direction: column;
+    }
+}

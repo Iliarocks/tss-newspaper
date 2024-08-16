@@ -1,0 +1,1 @@
+This a website I made for Thornhill Secondary School's newspaper, Eye of the Tiger. I was the paper's photographer for 3 years, but I also wanted to help create an online platform for us, so I starting making this, though I never fully completed it (ᗒᗣᗕ)՞.

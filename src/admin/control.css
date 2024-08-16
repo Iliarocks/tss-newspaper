@@ -1,0 +1,142 @@
+@import url('https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.core.css');
+
+#admin-page {
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #EBEBEB;
+    display: flex;
+    gap: 20px;
+}
+
+#admin-sidebar {
+    height: 100%;
+    min-width: 300px;
+    padding: 25px;
+    background-color: #EBEBEB;
+    box-shadow: 0 4px 17.3px 5px rgb(0, 0, 0, 0.05);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#admin-logo {
+    font-size: 18px;
+}
+
+#admin-logout {
+    margin-top: auto;
+    color: #e29213;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#admin-nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.admin-button {
+    cursor: pointer;
+}
+
+.admin-nav-link {
+    font-size: 16px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.admin-nav-link:hover {
+    color: #e29213;
+    text-decoration: underline;
+}
+
+#admin-control-panel {
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    background-color: #EBEBEB;
+    box-shadow: 0 4px 17.3px 5px rgb(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+
+.admin-control-panel-header {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.admin-form {
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.quill {
+    grid-column: 1 / 3;
+}
+
+.admin-text-input {
+    display: block;
+    padding: 8px;
+    border: none;
+    background-color: #D2D2D2;
+    font-size: 15px;
+}
+
+.admin-submit-button {
+    display: block;
+    border: none;
+    padding: 8px;
+    background-color: #8B8B8B;
+}
+
+.admin-list {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.admin-list-item {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D2D2D2;
+}
+
+.admin-list-item-controls {
+    display: flex;
+}
+
+.admin-list-button {
+    padding: 2px 8px;
+    border: none;
+    background-color: #D2D2D2;
+    font-size: 15px;
+}
+
+.admin-list-button:hover {
+    text-decoration: underline;
+}
+
+/* -------- TEXT EDITOR -------- */
+.quill {
+    background-color: #D2D2D2;
+}
+
+.ql-container {
+    height: calc(100% - 42px)!important; 
+  }
+
+/* -------- ABOUT SECTION -------- */
+#about-photo-input {
+    grid-column: 1 / 3;
+}
